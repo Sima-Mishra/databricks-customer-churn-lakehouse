@@ -1,6 +1,9 @@
 # Customer Churn & Lifetime Value Analytics  
 ## End-to-End Databricks Lakehouse Project
 
+
+<img width="840" height="381" alt="Screenshot 2026-01-20 145543" src="https://github.com/user-attachments/assets/95fc4f5f-3433-4a15-8030-bbf0bb623995" />
+
 ---
 
 ## Overview
@@ -40,6 +43,8 @@ The dataset contains missing values and cancelled transactions, reflecting real-
 
 ## Architecture (Medallion Architecture)
 
+<img width="580" height="721" alt="architecture png" src="https://github.com/user-attachments/assets/53f670dc-8684-4587-9aa1-ad7b3e8c78db" />
+
 Unity Catalog Volume (Raw CSV)
 ↓
 Bronze Layer (Raw Delta Tables)
@@ -61,6 +66,9 @@ ML Model (Spark ML + MLflow)
 **Table**
 ecommerce.bronze.bronze_online_retail
 
+<img width="710" height="408" alt="bronze_layer png" src="https://github.com/user-attachments/assets/4b0c65cf-cc70-4d17-8c1f-c06280f03bc8" />
+
+
 ## Silver Layer — Data Cleaning & Feature Engineering
 **Transformations Applied**
 - Removed records with NULL `CustomerID`
@@ -71,10 +79,16 @@ ecommerce.bronze.bronze_online_retail
 **Table**
 ecommerce.silver.silver_online_retail
 
+<img width="660" height="394" alt="silver_layer png" src="https://github.com/user-attachments/assets/b8a74118-24c1-44d3-a78a-31110051aa08" />
+
+
 ## Gold Layer — Business Metrics
 
 ### Customer Metrics Table
 ecommerce.gold.gold_customer_metrics
+
+<img width="1362" height="641" alt="gold_layer png" src="https://github.com/user-attachments/assets/2463e0ba-fb00-48f9-807f-d7068e77232b" />
+
 
 **Features**
 - Total Spend
@@ -115,6 +129,8 @@ Analytics were derived using Databricks SQL on Gold tables:
 
 These insights help identify high-value customers and design effective retention strategies.
 
+<img width="1629" height="661" alt="mlflow_runs png" src="https://github.com/user-attachments/assets/b7b946e6-e5ea-41bf-a9dd-25311894127d" />
+
 ---
 
 ## Orchestration
@@ -123,6 +139,8 @@ A Databricks Job automates the full pipeline:
 2. Silver transformations
 3. Gold aggregations
 4. ML model training
+
+<img width="1036" height="808" alt="job_pipeline png1" src="https://github.com/user-attachments/assets/13587d81-fc2f-4bf2-8327-df9c56a463e1" />
 
 ---
 
