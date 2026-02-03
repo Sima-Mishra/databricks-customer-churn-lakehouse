@@ -131,7 +131,7 @@ These insights help identify high-value customers and design effective retention
 
 <img width="1629" height="661" alt="mlflow_runs png" src="https://github.com/user-attachments/assets/b7b946e6-e5ea-41bf-a9dd-25311894127d" />
 
-<img width="1286" height="774" alt="Screenshot 2026-02-02 201101" src="https://github.com/user-attachments/assets/1a2eb60b-f1a7-480e-893a-fbb86e4e6e0d" />
+<img width="1285" height="846" alt="image" src="https://github.com/user-attachments/assets/567707dd-8dab-4bff-a0e0-e2fc912c1c1e" />
 
 
 ---
